@@ -1,0 +1,56 @@
+.content {
+    padding: 0 64px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100vh;
+}
+
+.main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.title {
+    color: black;
+    font-family: 'Nunito', serif;
+    font-size: 4em;
+    -webkit-animation-fill-mode: both;
+    -webkit-animation-name: fade-in;
+    -webkit-animation-duration: 1s;
+}
+
+.link {
+    font-family: 'Nunito', serif;
+    font-size: 1.5em;
+    color: #888888;
+    transition: all 0.3s;
+    -webkit-animation-fill-mode: both;
+    -webkit-animation-name: fade-in;
+    -webkit-animation-duration: 1s;
+}
+
+#link1 {
+    -webkit-animation-delay: 0.3s;
+}
+
+#link2 {
+    -webkit-animation-delay: 0.5s;
+}
+
+.link:hover {
+    color: black;
+}
+
+@keyframes fade-in {
+    0% {
+        transform: translateY(40px);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateY(0px);
+        opacity: 1;
+    }
+}

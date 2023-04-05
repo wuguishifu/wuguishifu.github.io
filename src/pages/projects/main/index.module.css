@@ -1,0 +1,168 @@
+html {
+    overflow-x: hidden;
+}
+
+.content {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.projects-wrapper {
+    margin-left: 25%;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+}
+
+@media (max-width: 1200px) {
+    .projects-wrapper {
+        margin-left: 12.5%;
+        width: 75%;
+    }
+}
+
+.project-row {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 2%;
+}
+
+.project-horizontal {
+    display: flex;
+    flex-direction: row;
+    border-radius: 25px;
+}
+
+.project-vertical {
+    display: flex;
+    flex-direction: column;
+    border-radius: 25px;
+}
+
+.text {
+    font-family: 'Nunito', serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: left;
+    height: 100%;
+    width: 80%;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+.header {
+    color: white;
+    font-size: 3.2em;
+}
+
+.description {
+    color: rgba(255, 255, 255, 0.6);
+    font-size: 1.3em;
+    margin: 0;
+}
+
+.image {
+    opacity: 0;
+}
+
+.project {
+    opacity: 0;
+}
+
+.visible {
+}
+
+.left {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+.right {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+.gradient-blue {
+    background: linear-gradient(30deg, rgb(0, 50, 190) 0%, rgb(108, 200, 255) 100%);
+}
+
+.gradient-red {
+    background: linear-gradient(30deg, rgb(134, 0, 0) 0%, rgb(225, 90, 90) 100%);
+}
+
+.gradient-blurple {
+    background: linear-gradient(30deg, rgb(183, 0, 224) 0%, rgb(103, 116, 227) 100%);
+}
+
+.gradient-green {
+    background: linear-gradient(30deg, rgb(40, 84, 69) 0%, rgb(202, 230, 219) 100%);
+}
+
+#ptable-image {
+    height: 500px;
+    padding-top: 5%;
+    padding-bottom: 5%;
+}
+
+#boba-tracker-image {
+    width: 100%;
+}
+
+#molecular-image {
+    box-shadow: 6px 6px 38px rgba(0, 0, 0, 0.58);
+    -webkit-box-shadow: 6px 6px 38px 0 rgba(0, 0, 0, 0.58);
+    -moz-box-shadow: 6px 6px 38px 0 rgba(0, 0, 0, 0.58);
+    width: 90%;
+}
+
+#mujank-image {
+    height: 400px;
+    padding-top: 5%;
+    padding-bottom: 5%;
+}
+
+@keyframes fade-in {
+    0% {
+        transform: translateY(40px);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateY(0px);
+        opacity: 1;
+    }
+}
+
+.project-animation {
+    -webkit-animation-fill-mode: both;
+    -webkit-animation-name: fade-in;
+    -webkit-animation-duration: 1.0s;
+}
+
+.image-animation {
+    -webkit-animation-fill-mode: both;
+    -webkit-animation-name: fade-in;
+    -webkit-animation-duration: 1.6s;
+    -webkit-animation-delay: 0.15s;
+}
+
+.header-animation {
+    -webkit-animation-fill-mode: both;
+    -webkit-animation-name: fade-in;
+    -webkit-animation-duration: 1.2s;
+    -webkit-animation-delay: 0.15s;
+}
+
+.text-animation {
+    -webkit-animation-fill-mode: both;
+    -webkit-animation-name: fade-in;
+    -webkit-animation-duration: 1.2s;
+    -webkit-animation-delay: 0.4s;
+}

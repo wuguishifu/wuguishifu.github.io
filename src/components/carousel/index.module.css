@@ -1,0 +1,22 @@
+.carousel-button {
+    font-size: 64px;
+    color: white;
+    cursor: pointer;
+    width: 5%;
+    transition: all 0.3s;
+}
+
+.carousel-button:hover {
+    color: rgba(255, 255, 255, 0.6);
+}
+
+.carousel-image {
+    width: 90%;
+}
+
+.carousel-bullet {
+    width: 10px;
+    height: 10px;
+    border-radius: 100%;
+    border: 2px solid white;
+}

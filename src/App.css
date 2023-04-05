@@ -1,0 +1,11 @@
+a {
+    cursor: pointer;
+    user-select: none;
+    text-decoration: none;
+}
+
+.centered {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+}

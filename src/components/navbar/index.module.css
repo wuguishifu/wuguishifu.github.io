@@ -1,0 +1,46 @@
+.wrapper {
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 1;
+    align-items: center;
+    width: 100vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.items {
+    width: 100%;
+    padding: 20px 32px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.name {
+    font-weight: 800;
+    color: black;
+    font-size: 32px;
+    line-height: 40px;
+    font-family: 'Nunito', serif;
+    transition: all 0.3s;
+}
+
+.name:hover {
+    color: #0064a4;
+}
+
+.item {
+    font-family: 'Nunito', serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 16px;
+    margin-left: 20px;
+    color: #888888;
+    transition: 0.3s;
+}
+
+.item:hover {
+    color: black
+}

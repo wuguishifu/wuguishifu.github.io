@@ -1,0 +1,263 @@
+.section {
+    display: flex;
+    flex-direction: row;
+    padding-left: 10%;
+    padding-right: 10%;
+    justify-content: space-between;
+}
+
+.section-image {
+    width: 100%;
+    margin: 5em 0;
+}
+
+.transparent {
+    opacity: 0;
+}
+
+.half-height {
+    scale: 0.5;
+}
+
+.shadow {
+    box-shadow: 6px 6px 38px  rgba(0,0,0,0.58);
+    -webkit-box-shadow: 6px 6px 38px 0 rgba(0,0,0,0.58);
+    -moz-box-shadow: 6px 6px 38px 0 rgba(0,0,0,0.58);
+}
+
+.section-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+}
+
+.left-major .left {
+    width: 55%;
+    min-width: 55%;
+}
+
+.left-major .right {
+    width: 40%;
+    min-width: 40%;
+}
+
+.right-major .left {
+    width: 40%;
+    min-width: 40%;
+}
+
+.right-major .right {
+    width: 55%;
+    min-width: 55%;
+}
+
+.title {
+    font-family: 'Nunito', serif;
+    font-size: 3em;
+    font-weight: bold;
+    margin-bottom: 0.5em;
+    opacity: 0;
+}
+
+.text {
+    opacity: 0;
+    font-family: 'Nunito', serif;
+    font-size: 1.3em;
+    margin-bottom: 0.5em;
+}
+
+.visible {
+
+}
+
+.carousel {
+
+}
+
+.image-animation {
+    -webkit-animation-fill-mode: both;
+    -webkit-animation-name: fade-in;
+    -webkit-animation-duration: 1.3s;
+}
+
+.footer-text-animation {
+    -webkit-animation-fill-mode: both;
+    -webkit-animation-name: fade-no-translate;
+    -webkit-animation-duration: 1s;
+}
+
+.footer-animation {
+    -webkit-animation-fill-mode: both;
+    -webkit-animation-name: fade-no-translate;
+    -webkit-animation-duration: 1.3s;
+}
+
+.title-animation {
+    -webkit-animation-fill-mode: both;
+    -webkit-animation-name: fade-in;
+    -webkit-animation-duration: 1s;
+}
+
+.text-animation {
+    -webkit-animation-fill-mode: both;
+    -webkit-animation-name: fade-in;
+    -webkit-animation-duration: 1s;
+    -webkit-animation-delay: 0.3s;
+}
+
+.button-animation {
+    -webkit-animation-fill-mode: both;
+    -webkit-animation-name: fade-in;
+    -webkit-animation-duration: 1s;
+    -webkit-animation-delay: 0.5s;
+}
+
+@keyframes fade-in {
+    0% {
+        transform: translateY(40px);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateY(0px);
+        opacity: 1;
+    }
+}
+
+@keyframes fade-no-translate {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1
+    }
+}
+
+.left-major .title {
+    color: black;
+}
+
+.left-major .text {
+    color: #00000080;
+}
+
+.right-major .title {
+    color: white;
+}
+
+.right-major .text {
+    color: #ffffff80;
+}
+
+.spacer {
+    min-height: 5em;
+}
+
+.gradient-blue {
+    background: linear-gradient(30deg, rgb(0, 50, 190) 0%, rgb(108, 200, 255) 100%);
+}
+
+.gradient-red {
+    background: linear-gradient(30deg, rgb(134, 0, 0) 0%, rgb(225, 90, 90) 100%);
+}
+
+.gradient-blurple {
+    background: linear-gradient(30deg, rgb(183, 0, 224) 0%, rgb(103, 116, 227) 100%);
+}
+
+.gradient-green {
+    background: linear-gradient(30deg, rgb(40, 84, 69) 0%, rgb(202, 230, 219) 100%);
+}
+
+.white {
+    background-color: white;
+}
+
+.footer {
+    display: flex;
+    flex-direction: row;
+    padding: 0 20%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer .left {
+    width: 50%;
+}
+
+.footer .right {
+    width: 50%;
+}
+
+.footer-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+}
+
+.footer .title {
+    color: white;
+}
+
+.footer .text {
+    color: #ffffff80;
+}
+
+.footer-image {
+    width: 50%;
+    margin: 4em 25%;
+    padding: 1em;
+}
+
+.button-holder {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+}
+
+.button-rounded-secondary {
+    margin-top: 1em;
+    color: #0064a4;
+    background-color: white;
+    cursor: pointer;
+    font-size: 1.2em;
+    font-family: "Nunito", serif;
+    font-weight: 400;
+    padding: 0.3em 1.1em;
+    border-radius: 0.5em;
+    user-select: none;
+    transition: all 0.3s;
+}
+
+.button-rounded-secondary:hover {
+    background-color: rgb(245, 249, 252);
+}
+
+.button-rounded-secondary:active {
+    background-color: rgb(221, 229, 236);
+}
+
+.button-rounded-primary {
+    margin-top: 1em;
+    color: #0064a4;
+    background-color: white;
+    cursor: pointer;
+    font-size: 1.2em;
+    font-family: "Nunito", serif;
+    font-weight: 400;
+    padding: 0.3em 1.1em;
+    border-radius: 0.5em;
+    user-select: none;
+    transition: all 0.3s;
+    border: 2px solid #0064a4;
+}
+
+.button-rounded-primary:hover {
+    background-color: #0064a4;
+    color: white;
+}

@@ -1,10 +1,20 @@
 import styles from './index.module.css';
 import Navbar from "../../components/navbar";
 import Chibi from '../../assets/chibi/chibi-reflected.png'
+import {useNavigate} from "react-router-dom";
+
+const paths = [
+    '/projects/periodic-table',
+    '/projects/boba-tracker',
+    '/projects/molecular',
+    '/projects/mujank',
+]
 
 export default function HomePage() {
+    const navigate = useNavigate();
+
     function handleShowMe() {
-        console.log('hello world please show me something cool');
+        navigate(paths[Math.floor(Math.random() * paths.length)]);
     }
 
     return (
